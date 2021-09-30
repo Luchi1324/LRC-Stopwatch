@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,30 +12,29 @@
         <!--Base View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BaseView" customModule="LRC_Stopwatch_Stable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BaseView" customModule="LRC_Stopwatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="TV8-3U-rEt">
-                                <rect key="frame" x="0.0" y="77" width="414" height="819"/>
+                                <rect key="frame" x="0.0" y="77" width="390" height="767"/>
                                 <connections>
                                     <segue destination="jcV-7C-L52" kind="embed" id="jEF-kq-DfV"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="2ya-st-FCU">
-                                <rect key="frame" x="0.0" y="77" width="414" height="819"/>
+                                <rect key="frame" x="0.0" y="77" width="390" height="767"/>
                                 <connections>
                                     <segue destination="eeD-WS-XWW" kind="embed" id="Qhd-mc-7V7"/>
                                 </connections>
                             </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EUl-J7-n07">
-                                <rect key="frame" x="40" y="44" width="334" height="32"/>
+                                <rect key="frame" x="40" y="44" width="310" height="32"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <segments>
                                     <segment title="Stopwatch"/>
                                     <segment title="Swimmers"/>
-                                    <segment title="Calendar"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" systemColor="linkColor"/>
                                 <connections>
@@ -46,8 +45,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EUl-J7-n07" secondAttribute="trailing" constant="40" id="43G-O9-92I"/>
                             <constraint firstItem="EUl-J7-n07" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="4e1-LP-zIS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EUl-J7-n07" secondAttribute="trailing" constant="40" id="8vq-DA-HNQ"/>
                             <constraint firstItem="2ya-st-FCU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="906-jv-Sud"/>
                             <constraint firstItem="2ya-st-FCU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OJ3-8U-XTv"/>
                             <constraint firstAttribute="bottom" secondItem="2ya-st-FCU" secondAttribute="bottom" id="RKS-mb-c5N"/>
@@ -74,20 +73,239 @@
         <!--Add Swimmer View-->
         <scene sceneID="hv0-Iq-DNY">
             <objects>
-                <viewController title="Add Swimmer" id="vkZ-4s-A7H" userLabel="Add Swimmer View" customClass="SwimmerAdd" customModule="LRC_Stopwatch_Stable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Add Swimmer" id="vkZ-4s-A7H" userLabel="Add Swimmer View" customClass="SwimmerAdd" customModule="LRC_Stopwatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uyH-aL-7q1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="765"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="767"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAn-M7-JNy">
-                                <rect key="frame" x="18" y="20" width="378" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9C-8v-47d">
-                                <rect key="frame" x="20" y="691" width="143" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK9-M2-ge3">
+                                <rect key="frame" x="0.0" y="140" width="390" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPx-td-h1N" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1130"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAn-M7-JNy">
+                                                <rect key="frame" x="8" y="8" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vkH-nv-ORw">
+                                                <rect key="frame" x="8" y="50" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight (kg)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acL-xE-56q">
+                                                <rect key="frame" x="8" y="134" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tSD-5F-iJ1">
+                                                <rect key="frame" x="8" y="92" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height (cm)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKp-iW-Ddy">
+                                                <rect key="frame" x="8" y="176" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Best Stroke" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oT0-t2-90s">
+                                                <rect key="frame" x="8" y="218" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Best Distance" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gau-4M-Ocd">
+                                                <rect key="frame" x="8" y="260" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="50 Breast Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BUz-1k-Gsh">
+                                                <rect key="frame" x="8" y="867" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100 Breast Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAp-1J-x5Q">
+                                                <rect key="frame" x="8" y="909" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="200 Breast Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="frb-rX-yEk">
+                                                <rect key="frame" x="8" y="951" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="50 Back Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f22-g7-6lp">
+                                                <rect key="frame" x="8" y="729" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100 Back Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3vc-Ph-ZSU">
+                                                <rect key="frame" x="8" y="771" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="200 Back Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yjF-8r-7fV">
+                                                <rect key="frame" x="8" y="813" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="50 Fly Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uuB-pA-H1Q">
+                                                <rect key="frame" x="8" y="587" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100 Fly Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fzP-iH-btp">
+                                                <rect key="frame" x="8" y="629" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="200 Fly Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x3z-YB-hOZ">
+                                                <rect key="frame" x="8" y="671" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="50 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-Rx-nUn">
+                                                <rect key="frame" x="8" y="326" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YfX-nz-hPF">
+                                                <rect key="frame" x="8" y="368" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="200 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLH-HQ-VVr">
+                                                <rect key="frame" x="8" y="410" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="400 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-IC-WYo">
+                                                <rect key="frame" x="8" y="452" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="800 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="niQ-gt-Lrc">
+                                                <rect key="frame" x="8" y="494" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1500 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4NE-e9-DxZ">
+                                                <rect key="frame" x="8" y="536" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100 IM Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rGc-9C-t7f">
+                                                <rect key="frame" x="8" y="1012" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="200 IM Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kht-ox-HZf">
+                                                <rect key="frame" x="8" y="1054" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="400 IM Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ivw-ke-Fgp">
+                                                <rect key="frame" x="8" y="1096" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="3vc-Ph-ZSU" secondAttribute="leading" id="0oq-cu-ISK"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="fzP-iH-btp" secondAttribute="trailing" id="0wj-6o-2ea"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="kht-ox-HZf" secondAttribute="leading" id="1En-du-Bez"/>
+                                            <constraint firstItem="3vc-Ph-ZSU" firstAttribute="top" secondItem="f22-g7-6lp" secondAttribute="bottom" constant="8" symbolic="YES" id="1Hg-Z1-BR9"/>
+                                            <constraint firstItem="ZAp-1J-x5Q" firstAttribute="top" secondItem="BUz-1k-Gsh" secondAttribute="bottom" constant="8" symbolic="YES" id="2OK-uD-33f"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="vkH-nv-ORw" secondAttribute="leading" id="2U7-57-P2C"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="x3z-YB-hOZ" secondAttribute="trailing" id="3RC-h1-jhT"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="uuB-pA-H1Q" secondAttribute="leading" id="4Yk-2W-jHH"/>
+                                            <constraint firstItem="f22-g7-6lp" firstAttribute="top" secondItem="x3z-YB-hOZ" secondAttribute="bottom" constant="24" id="54U-5o-cdY"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="niQ-gt-Lrc" secondAttribute="trailing" id="5qB-Ly-NXN"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="uuB-pA-H1Q" secondAttribute="trailing" id="6bB-VN-aXy"/>
+                                            <constraint firstItem="acL-xE-56q" firstAttribute="top" secondItem="fPx-td-h1N" secondAttribute="top" constant="134" id="7Vg-hb-ClU"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="XAn-M7-JNy" secondAttribute="leading" id="7zv-FB-RiQ"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="NKp-iW-Ddy" secondAttribute="leading" id="81M-GS-dU4"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="tSD-5F-iJ1" secondAttribute="trailing" id="8Xp-SW-zue"/>
+                                            <constraint firstAttribute="bottom" secondItem="frb-rX-yEk" secondAttribute="bottom" constant="145" id="923-zI-pqf"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="vkH-nv-ORw" secondAttribute="trailing" id="9hf-2s-UYn"/>
+                                            <constraint firstItem="acL-xE-56q" firstAttribute="top" secondItem="tSD-5F-iJ1" secondAttribute="bottom" constant="8" symbolic="YES" id="AL7-pi-J8s"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="top" secondItem="fPx-td-h1N" secondAttribute="top" constant="536" id="BBW-bY-HYR"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="YfX-nz-hPF" secondAttribute="trailing" id="C7x-fC-fZ7"/>
+                                            <constraint firstItem="Ivw-ke-Fgp" firstAttribute="top" secondItem="kht-ox-HZf" secondAttribute="bottom" constant="8" symbolic="YES" id="CPH-y6-vZS"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="gau-4M-Ocd" secondAttribute="leading" id="DJI-S6-LYp"/>
+                                            <constraint firstAttribute="bottom" secondItem="x3z-YB-hOZ" secondAttribute="bottom" constant="425" id="DOa-tV-WMa"/>
+                                            <constraint firstItem="gau-4M-Ocd" firstAttribute="top" secondItem="fPx-td-h1N" secondAttribute="top" constant="260" id="DeT-sb-pAt"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="oT0-t2-90s" secondAttribute="trailing" id="Dpc-Eo-dlm"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="7d8-Rx-nUn" secondAttribute="trailing" id="E2p-ED-Ry8"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="oT0-t2-90s" secondAttribute="leading" id="F3E-dM-gyN"/>
+                                            <constraint firstItem="x3z-YB-hOZ" firstAttribute="top" secondItem="fzP-iH-btp" secondAttribute="bottom" constant="8" symbolic="YES" id="FXm-Dx-qNN"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="top" secondItem="niQ-gt-Lrc" secondAttribute="bottom" constant="8" symbolic="YES" id="IAH-5b-41f"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="BUz-1k-Gsh" secondAttribute="trailing" id="JrB-Z1-5qC"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="XAn-M7-JNy" secondAttribute="trailing" id="JxW-If-8ll"/>
+                                            <constraint firstItem="gau-4M-Ocd" firstAttribute="top" secondItem="oT0-t2-90s" secondAttribute="bottom" constant="8" symbolic="YES" id="MGg-vj-Icz"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1130" id="MJf-Db-LAa"/>
+                                            <constraint firstItem="XAn-M7-JNy" firstAttribute="top" secondItem="fPx-td-h1N" secondAttribute="topMargin" id="N3f-il-mNT"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="aLH-HQ-VVr" secondAttribute="trailing" id="N5z-UH-SNG"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="7d8-Rx-nUn" secondAttribute="leading" id="PtX-ea-wTc"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="f22-g7-6lp" secondAttribute="trailing" id="QJS-ch-eU4"/>
+                                            <constraint firstItem="YfX-nz-hPF" firstAttribute="top" secondItem="7d8-Rx-nUn" secondAttribute="bottom" constant="8" symbolic="YES" id="R96-6v-1Bc"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="BUz-1k-Gsh" secondAttribute="leading" id="Rg7-d2-3f5"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ivw-ke-Fgp" secondAttribute="bottom" id="VNk-VX-ySi"/>
+                                            <constraint firstItem="uuB-pA-H1Q" firstAttribute="top" secondItem="4NE-e9-DxZ" secondAttribute="bottom" constant="17" id="W0U-jk-BbA"/>
+                                            <constraint firstItem="frb-rX-yEk" firstAttribute="top" secondItem="ZAp-1J-x5Q" secondAttribute="bottom" constant="8" symbolic="YES" id="WBr-M5-hQ6"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="acL-xE-56q" secondAttribute="leading" id="Xyo-IK-L4m"/>
+                                            <constraint firstItem="niQ-gt-Lrc" firstAttribute="top" secondItem="Fgh-IC-WYo" secondAttribute="bottom" constant="8" symbolic="YES" id="Y3r-I9-6YA"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="x3z-YB-hOZ" secondAttribute="leading" id="YFF-BZ-Y1p"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="Fgh-IC-WYo" secondAttribute="trailing" id="YQ5-0D-qZ5"/>
+                                            <constraint firstItem="NKp-iW-Ddy" firstAttribute="top" secondItem="acL-xE-56q" secondAttribute="bottom" constant="8" symbolic="YES" id="ZBb-7G-dLB"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="yjF-8r-7fV" secondAttribute="leading" id="b8Y-Io-lw7"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="acL-xE-56q" secondAttribute="trailing" id="c6q-GM-IB0"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1130" id="c7c-v9-eUB"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="fPx-td-h1N" secondAttribute="trailingMargin" id="cV6-Qm-odp"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="YfX-nz-hPF" secondAttribute="leading" id="cxI-C0-DPt"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="f22-g7-6lp" secondAttribute="leading" id="dId-tq-oA7"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="ZAp-1J-x5Q" secondAttribute="leading" id="deU-NQ-ybu"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="fzP-iH-btp" secondAttribute="leading" id="dxC-EX-eFR"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="frb-rX-yEk" secondAttribute="leading" id="fUU-In-F5C"/>
+                                            <constraint firstItem="vkH-nv-ORw" firstAttribute="top" secondItem="XAn-M7-JNy" secondAttribute="bottom" constant="8" symbolic="YES" id="fbe-HD-e4r"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="fPx-td-h1N" secondAttribute="leadingMargin" id="gKj-pF-QmJ"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="aLH-HQ-VVr" secondAttribute="leading" id="gbh-Ii-Wy5"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="Ivw-ke-Fgp" secondAttribute="trailing" id="ghk-rw-6VA"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="Ivw-ke-Fgp" secondAttribute="leading" id="h02-Tt-zyR"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="kht-ox-HZf" secondAttribute="trailing" id="hR3-bi-aPu"/>
+                                            <constraint firstItem="7d8-Rx-nUn" firstAttribute="top" secondItem="gau-4M-Ocd" secondAttribute="bottom" constant="32" id="kDl-lO-M6K"/>
+                                            <constraint firstItem="Fgh-IC-WYo" firstAttribute="top" secondItem="aLH-HQ-VVr" secondAttribute="bottom" constant="8" symbolic="YES" id="kzB-Bd-qmZ"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="rGc-9C-t7f" secondAttribute="trailing" id="mQA-80-Z86"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="frb-rX-yEk" secondAttribute="trailing" id="n0D-Qa-UMi"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="NKp-iW-Ddy" secondAttribute="trailing" id="noS-9u-0OA"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="tSD-5F-iJ1" secondAttribute="leading" id="pG5-3H-of6"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="gau-4M-Ocd" secondAttribute="trailing" id="qaM-8d-Rgy"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="yjF-8r-7fV" secondAttribute="trailing" id="ssu-l2-kct"/>
+                                            <constraint firstAttribute="height" constant="1130" id="uNj-hC-EwU"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="rGc-9C-t7f" secondAttribute="leading" id="uhn-4Y-asH"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="3vc-Ph-ZSU" secondAttribute="trailing" id="uht-by-YWU"/>
+                                            <constraint firstItem="rGc-9C-t7f" firstAttribute="top" secondItem="frb-rX-yEk" secondAttribute="bottom" constant="27" id="vRj-D5-j0m"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="trailing" secondItem="ZAp-1J-x5Q" secondAttribute="trailing" id="wKq-aK-wPv"/>
+                                            <constraint firstItem="BUz-1k-Gsh" firstAttribute="top" secondItem="yjF-8r-7fV" secondAttribute="bottom" constant="20" id="xIZ-J5-YHc"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="niQ-gt-Lrc" secondAttribute="leading" id="yDm-3K-enb"/>
+                                            <constraint firstItem="4NE-e9-DxZ" firstAttribute="leading" secondItem="Fgh-IC-WYo" secondAttribute="leading" id="ysD-jF-H5I"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fPx-td-h1N" secondAttribute="trailing" id="1rl-IJ-24y"/>
+                                    <constraint firstItem="fPx-td-h1N" firstAttribute="leading" secondItem="BK9-M2-ge3" secondAttribute="leading" id="FLB-lo-EXa"/>
+                                    <constraint firstItem="fPx-td-h1N" firstAttribute="centerX" secondItem="BK9-M2-ge3" secondAttribute="centerX" id="KIA-cB-ODw"/>
+                                    <constraint firstItem="fPx-td-h1N" firstAttribute="top" secondItem="BK9-M2-ge3" secondAttribute="top" id="iLK-2X-wXA"/>
+                                    <constraint firstAttribute="bottom" secondItem="fPx-td-h1N" secondAttribute="bottom" id="wUS-d4-7ZI"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9C-8v-47d">
+                                <rect key="frame" x="16" y="698" width="111" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Oi5-8n-9Id"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" systemColor="systemRedColor"/>
@@ -97,33 +315,11 @@
                                     <action selector="cancelSwimmer:" destination="vkZ-4s-A7H" eventType="touchUpInside" id="Wle-Yc-LmA"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vkH-nv-ORw">
-                                <rect key="frame" x="18" y="104" width="378" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height (cm)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKp-iW-Ddy">
-                                <rect key="frame" x="18" y="146" width="378" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight (kg)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acL-xE-56q">
-                                <rect key="frame" x="18" y="188" width="378" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tSD-5F-iJ1">
-                                <rect key="frame" x="18" y="62" width="378" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5f-0I-3ZC">
-                                <rect key="frame" x="245" y="691" width="151" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5f-0I-3ZC">
+                                <rect key="frame" x="290" y="696" width="84" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="cLw-ya-RBW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" name="AccentColor"/>
@@ -133,69 +329,49 @@
                                     <action selector="enterSwimmer:" destination="vkZ-4s-A7H" eventType="touchUpInside" id="1oM-e3-e7H"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="50 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-Rx-nUn">
-                                <rect key="frame" x="20" y="291" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YfX-nz-hPF">
-                                <rect key="frame" x="20" y="333" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="200 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aLH-HQ-VVr">
-                                <rect key="frame" x="20" y="375" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="400 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-IC-WYo">
-                                <rect key="frame" x="20" y="417" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="800 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="niQ-gt-Lrc">
-                                <rect key="frame" x="20" y="459" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1500 Free Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4NE-e9-DxZ">
-                                <rect key="frame" x="20" y="501" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BK9-M2-ge3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="683"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPx-td-h1N">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="683"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="byH-kN-aND"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Jzd-yh-Ioc"/>
-                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VMH-8s-Mm4"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="BK9-M2-ge3" firstAttribute="top" secondItem="VMH-8s-Mm4" secondAttribute="top" id="8LV-IO-J8q"/>
+                            <constraint firstItem="j5f-0I-3ZC" firstAttribute="top" secondItem="BK9-M2-ge3" secondAttribute="bottom" constant="8" symbolic="YES" id="B3A-FJ-xdQ"/>
+                            <constraint firstItem="j5f-0I-3ZC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Z9C-8v-47d" secondAttribute="trailing" constant="8" symbolic="YES" id="Hli-3I-Ufq"/>
+                            <constraint firstItem="j5f-0I-3ZC" firstAttribute="trailing" secondItem="uyH-aL-7q1" secondAttribute="trailingMargin" id="SOr-xp-3he"/>
+                            <constraint firstItem="Z9C-8v-47d" firstAttribute="leading" secondItem="uyH-aL-7q1" secondAttribute="leadingMargin" id="a0l-OZ-lg4"/>
+                            <constraint firstItem="BK9-M2-ge3" firstAttribute="leading" secondItem="VMH-8s-Mm4" secondAttribute="leading" id="dHi-kd-PGv"/>
+                            <constraint firstItem="BK9-M2-ge3" firstAttribute="trailing" secondItem="VMH-8s-Mm4" secondAttribute="trailing" id="qWi-r7-29m"/>
+                            <constraint firstAttribute="bottom" secondItem="BK9-M2-ge3" secondAttribute="bottom" constant="79" id="rhK-0K-3vf"/>
+                            <constraint firstItem="Z9C-8v-47d" firstAttribute="bottom" secondItem="j5f-0I-3ZC" secondAttribute="bottom" id="yZc-i2-Neu"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Swimmer" id="1l6-NT-lr6"/>
+                    <navigationItem key="navigationItem" title="Edit Swimmer" id="1l6-NT-lr6"/>
                     <connections>
                         <outlet property="cancelButton" destination="Z9C-8v-47d" id="pSO-CV-wkD"/>
+                        <outlet property="distanceField" destination="gau-4M-Ocd" id="44Y-Ma-enK"/>
                         <outlet property="dobField" destination="vkH-nv-ORw" id="BOc-Sj-ZYb"/>
+                        <outlet property="eightHunFreeField" destination="niQ-gt-Lrc" id="qLd-SA-M3m"/>
                         <outlet property="enterButton" destination="j5f-0I-3ZC" id="QAj-r4-1Pn"/>
+                        <outlet property="fifteenKFreeField" destination="4NE-e9-DxZ" id="X2Z-GW-thW"/>
+                        <outlet property="fiftyBackField" destination="f22-g7-6lp" id="0th-cq-uG2"/>
+                        <outlet property="fiftyBreastField" destination="BUz-1k-Gsh" id="XCx-GK-4nL"/>
+                        <outlet property="fiftyFlyField" destination="uuB-pA-H1Q" id="Ksl-jY-2yk"/>
                         <outlet property="fiftyFreeField" destination="7d8-Rx-nUn" id="I7g-wn-fTJ"/>
+                        <outlet property="fourHunFreeField" destination="Fgh-IC-WYo" id="xp1-jW-oXm"/>
+                        <outlet property="fourHunIMField" destination="Ivw-ke-Fgp" id="yjQ-CH-TrF"/>
                         <outlet property="genderField" destination="tSD-5F-iJ1" id="ssg-NB-0it"/>
                         <outlet property="heightField" destination="NKp-iW-Ddy" id="hAF-13-DvU"/>
+                        <outlet property="hunBackField" destination="3vc-Ph-ZSU" id="Zja-FJ-jz6"/>
+                        <outlet property="hunBreastField" destination="ZAp-1J-x5Q" id="5LK-7h-v1i"/>
+                        <outlet property="hunFlyField" destination="fzP-iH-btp" id="pli-sB-Njg"/>
                         <outlet property="hunFreeField" destination="YfX-nz-hPF" id="TF0-HD-XAB"/>
+                        <outlet property="hunIMField" destination="rGc-9C-t7f" id="66j-K4-HGB"/>
                         <outlet property="nameField" destination="XAn-M7-JNy" id="ku6-SW-WiU"/>
+                        <outlet property="strokeField" destination="oT0-t2-90s" id="K7n-1v-uUj"/>
+                        <outlet property="twoHunBackField" destination="yjF-8r-7fV" id="NHO-vg-LqN"/>
+                        <outlet property="twoHunBreastField" destination="frb-rX-yEk" id="xmb-hF-7VD"/>
+                        <outlet property="twoHunFlyField" destination="x3z-YB-hOZ" id="4Wr-TS-LqE"/>
+                        <outlet property="twoHunFreeField" destination="aLH-HQ-VVr" id="yze-wv-DYn"/>
+                        <outlet property="twoHunIMField" destination="kht-ox-HZf" id="cq9-qz-zYY"/>
                         <outlet property="weightField" destination="acL-xE-56q" id="tso-ca-fhN"/>
                         <segue destination="xOY-eJ-A3l" kind="unwind" identifier="unwindToView" unwindAction="unwindToSwimmerView:" id="kaV-tx-j6f"/>
                         <segue destination="xOY-eJ-A3l" kind="unwind" identifier="unwindFromCancel" unwindAction="cancelUnwind:" id="OZh-oz-y2t"/>
@@ -204,19 +380,18 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ta-u8-3bo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="xOY-eJ-A3l" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2405.7971014492755" y="5.6919642857142856"/>
+            <point key="canvasLocation" x="2405.7971014492755" y="3.683035714285714"/>
         </scene>
         <!--Swimmer View-->
         <scene sceneID="4ro-y0-fPe">
             <objects>
-                <viewController id="rce-bX-xSx" userLabel="Swimmer View" customClass="SwimmerView" customModule="LRC_Stopwatch_Stable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rce-bX-xSx" userLabel="Swimmer View" customClass="SwimmerView" customModule="LRC_Stopwatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lj6-l7-tPn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="819"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="767"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oly-dn-VxF">
-                                <rect key="frame" x="0.0" y="140" width="414" height="679"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oly-dn-VxF">
+                                <rect key="frame" x="0.0" y="140" width="390" height="627"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <color key="tintColor" systemColor="systemGray5Color"/>
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -225,21 +400,21 @@
                                 <color key="sectionIndexTrackingBackgroundColor" systemColor="systemGray5Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="swimmerCell" textLabel="mOI-ce-suR" detailTextLabel="CKg-qr-4Tr" style="IBUITableViewCellStyleSubtitle" id="1mb-Ey-vZt">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="390" height="55.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1mb-Ey-vZt" id="bWT-wk-Dmk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="55.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mOI-ce-suR">
-                                                    <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                                    <rect key="frame" x="20" y="8.9999999999999982" width="33" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CKg-qr-4Tr">
-                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -261,6 +436,12 @@
                         <viewLayoutGuide key="safeArea" id="c0A-aZ-Zem"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oly-dn-VxF" firstAttribute="leading" secondItem="c0A-aZ-Zem" secondAttribute="leading" id="Azf-zv-vfE"/>
+                            <constraint firstItem="oly-dn-VxF" firstAttribute="top" secondItem="c0A-aZ-Zem" secondAttribute="top" constant="52" id="HTZ-kF-Wh4"/>
+                            <constraint firstItem="oly-dn-VxF" firstAttribute="centerX" secondItem="lj6-l7-tPn" secondAttribute="centerX" id="R3E-uy-mYC"/>
+                            <constraint firstItem="oly-dn-VxF" firstAttribute="bottom" secondItem="c0A-aZ-Zem" secondAttribute="bottom" id="U4f-6W-Jaz"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Swimmers" id="aNf-CP-BOn">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="rEj-Z3-Ocs">
@@ -282,75 +463,67 @@
         <!--Swimmer Detail View-->
         <scene sceneID="UWP-Cz-O0s">
             <objects>
-                <viewController id="qkC-AP-AiB" userLabel="Swimmer Detail View" customClass="SwimmerDetail" customModule="LRC_Stopwatch_Stable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qkC-AP-AiB" userLabel="Swimmer Detail View" customClass="SwimmerDetail" customModule="LRC_Stopwatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q4V-K0-5Qv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="819"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="767"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loj-S3-n93">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loj-S3-n93">
                                 <rect key="frame" x="16" y="129" width="326" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3t-wj-cDL">
-                                <rect key="frame" x="0.0" y="129" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3t-wj-cDL">
+                                <rect key="frame" x="0.0" y="129" width="390" height="44"/>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfd-AL-ftt">
-                                <rect key="frame" x="16" y="212" width="326" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfd-AL-ftt">
+                                <rect key="frame" x="16" y="212" width="172" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xs9-O8-tpJ">
-                                <rect key="frame" x="16" y="250" width="326" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xs9-O8-tpJ">
+                                <rect key="frame" x="16" y="250" width="172" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU2-GJ-hY0">
-                                <rect key="frame" x="16" y="288" width="326" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU2-GJ-hY0">
+                                <rect key="frame" x="16" y="288" width="172" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XT2-WJ-tRd">
-                                <rect key="frame" x="16" y="174" width="326" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XT2-WJ-tRd">
+                                <rect key="frame" x="16" y="174" width="172" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nm3-8d-kNj">
-                                <rect key="frame" x="0.0" y="337" width="414" height="482"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="separatorColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kz3-FY-suy">
+                                <rect key="frame" x="0.0" y="342" width="390" height="425"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="systemGray5Color"/>
-                                <color key="sectionIndexTrackingBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" systemColor="systemGray5Color"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" textLabel="clZ-dm-EdX" detailTextLabel="wLk-Eq-VpJ" style="IBUITableViewCellStyleValue1" id="RoC-4w-py6">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" textLabel="qtK-vU-Mdr" detailTextLabel="glB-Iy-MJn" style="IBUITableViewCellStyleValue1" id="ngI-QT-D0w">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RoC-4w-py6" id="MOm-Zk-uCX">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ngI-QT-D0w" id="woC-n8-2KC">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="clZ-dm-EdX">
-                                                    <rect key="frame" x="20" y="12" width="33" height="20.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qtK-vU-Mdr">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="33" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wLk-Eq-VpJ">
-                                                    <rect key="frame" x="350" y="12" width="44" height="20.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="glB-Iy-MJn">
+                                                    <rect key="frame" x="326.33333333333331" y="11.999999999999998" width="43.666666666666664" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -358,57 +531,109 @@
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                            <color key="tintColor" systemColor="systemGray5Color"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="qkC-AP-AiB" id="fSx-Ya-GKh"/>
-                                    <outlet property="delegate" destination="qkC-AP-AiB" id="RXg-F4-mgi"/>
+                                    <outlet property="dataSource" destination="qkC-AP-AiB" id="POc-fe-JEM"/>
+                                    <outlet property="delegate" destination="qkC-AP-AiB" id="RBe-C0-ex6"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cey-5H-fTS">
+                                <rect key="frame" x="255" y="250" width="80" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stroke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNr-u5-gZv">
+                                <rect key="frame" x="245" y="174" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xJn-cC-VW3"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="Kz3-FY-suy" firstAttribute="top" secondItem="uU2-GJ-hY0" secondAttribute="bottom" constant="24" id="19V-eD-B73"/>
+                            <constraint firstItem="Xs9-O8-tpJ" firstAttribute="leading" secondItem="uU2-GJ-hY0" secondAttribute="leading" id="1OJ-FR-Bl8"/>
+                            <constraint firstItem="XT2-WJ-tRd" firstAttribute="top" secondItem="n3t-wj-cDL" secondAttribute="bottom" constant="1" id="32f-hf-ZaG"/>
+                            <constraint firstItem="Xs9-O8-tpJ" firstAttribute="trailing" secondItem="uU2-GJ-hY0" secondAttribute="trailing" id="4Ik-KE-rfW"/>
+                            <constraint firstItem="qfd-AL-ftt" firstAttribute="trailing" secondItem="Xs9-O8-tpJ" secondAttribute="trailing" id="BKl-9w-tNZ"/>
+                            <constraint firstItem="XT2-WJ-tRd" firstAttribute="trailing" secondItem="qfd-AL-ftt" secondAttribute="trailing" id="Ett-nB-gxg"/>
+                            <constraint firstItem="xJn-cC-VW3" firstAttribute="trailing" secondItem="Cey-5H-fTS" secondAttribute="trailing" constant="55" id="G2f-Wd-RK6"/>
+                            <constraint firstItem="qfd-AL-ftt" firstAttribute="top" secondItem="loj-S3-n93" secondAttribute="bottom" constant="37" id="ITe-Uv-Bb2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kz3-FY-suy" secondAttribute="trailing" constant="-16" id="LLs-Dj-vjJ"/>
+                            <constraint firstItem="qfd-AL-ftt" firstAttribute="leading" secondItem="Xs9-O8-tpJ" secondAttribute="leading" id="So4-6T-uhr"/>
+                            <constraint firstItem="loj-S3-n93" firstAttribute="leading" secondItem="XT2-WJ-tRd" secondAttribute="leading" id="WdC-FV-ojg"/>
+                            <constraint firstItem="n3t-wj-cDL" firstAttribute="leading" secondItem="Kz3-FY-suy" secondAttribute="leading" id="YIs-43-Vfy"/>
+                            <constraint firstItem="xJn-cC-VW3" firstAttribute="trailing" secondItem="qfd-AL-ftt" secondAttribute="trailing" constant="202" id="ZYG-Mf-tQU"/>
+                            <constraint firstItem="XT2-WJ-tRd" firstAttribute="top" secondItem="pNr-u5-gZv" secondAttribute="top" id="ZhA-29-UkL"/>
+                            <constraint firstItem="n3t-wj-cDL" firstAttribute="leading" secondItem="xJn-cC-VW3" secondAttribute="leading" id="Zth-Mc-St9"/>
+                            <constraint firstItem="pNr-u5-gZv" firstAttribute="leading" secondItem="XT2-WJ-tRd" secondAttribute="trailing" constant="57" id="awV-Q6-UBt"/>
+                            <constraint firstItem="XT2-WJ-tRd" firstAttribute="bottom" secondItem="pNr-u5-gZv" secondAttribute="bottom" id="c7B-Jv-ArS"/>
+                            <constraint firstItem="loj-S3-n93" firstAttribute="top" secondItem="q4V-K0-5Qv" secondAttribute="topMargin" constant="-11" id="d76-Go-fFI"/>
+                            <constraint firstItem="n3t-wj-cDL" firstAttribute="top" secondItem="loj-S3-n93" secondAttribute="top" id="dVl-cE-hqI"/>
+                            <constraint firstItem="Xs9-O8-tpJ" firstAttribute="top" secondItem="Cey-5H-fTS" secondAttribute="top" id="dZJ-N3-o68"/>
+                            <constraint firstItem="xJn-cC-VW3" firstAttribute="trailing" secondItem="loj-S3-n93" secondAttribute="trailing" constant="48" id="e0e-Ad-HEd"/>
+                            <constraint firstItem="n3t-wj-cDL" firstAttribute="centerX" secondItem="q4V-K0-5Qv" secondAttribute="centerX" id="gP1-nE-4Ln"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Kz3-FY-suy" secondAttribute="bottom" id="ghh-Lz-AX0"/>
+                            <constraint firstItem="Cey-5H-fTS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xs9-O8-tpJ" secondAttribute="trailing" symbolic="YES" id="gwz-ZM-u47"/>
+                            <constraint firstItem="Xs9-O8-tpJ" firstAttribute="top" secondItem="qfd-AL-ftt" secondAttribute="bottom" constant="8" id="ihX-ce-FJ8"/>
+                            <constraint firstItem="loj-S3-n93" firstAttribute="trailing" secondItem="pNr-u5-gZv" secondAttribute="trailing" id="ofS-Jd-zjE"/>
+                            <constraint firstItem="loj-S3-n93" firstAttribute="leading" secondItem="q4V-K0-5Qv" secondAttribute="leadingMargin" id="sQh-83-H2r"/>
+                            <constraint firstItem="uU2-GJ-hY0" firstAttribute="top" secondItem="Xs9-O8-tpJ" secondAttribute="bottom" constant="8" id="vaO-7w-idb"/>
+                            <constraint firstItem="qfd-AL-ftt" firstAttribute="top" secondItem="XT2-WJ-tRd" secondAttribute="bottom" constant="8" id="y6w-AW-wl2"/>
+                            <constraint firstItem="XT2-WJ-tRd" firstAttribute="leading" secondItem="qfd-AL-ftt" secondAttribute="leading" id="ydN-3s-Ip2"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kDX-q6-C9D"/>
+                    <navigationItem key="navigationItem" id="kDX-q6-C9D">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="28l-7g-0vI">
+                            <connections>
+                                <segue destination="vkZ-4s-A7H" kind="show" identifier="editSegue" id="i12-QA-vm9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="distanceLabel" destination="Cey-5H-fTS" id="LJd-1F-Y1P"/>
                         <outlet property="dobLabel" destination="qfd-AL-ftt" id="pml-EE-BNf"/>
                         <outlet property="genderLabel" destination="XT2-WJ-tRd" id="CyC-zZ-0ox"/>
                         <outlet property="heightLabel" destination="Xs9-O8-tpJ" id="BkF-k6-1Sg"/>
                         <outlet property="nameLabel" destination="loj-S3-n93" id="82A-WA-anE"/>
-                        <outlet property="timeTableView" destination="Nm3-8d-kNj" id="CLx-yK-BxI"/>
+                        <outlet property="strokeLabel" destination="pNr-u5-gZv" id="Gg2-uy-l4e"/>
+                        <outlet property="timeTableView" destination="Kz3-FY-suy" id="X5O-86-Ez9"/>
                         <outlet property="weightLabel" destination="uU2-GJ-hY0" id="rgD-oG-3ZF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I4f-Ht-1xa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2405.7971014492755" y="674.66517857142856"/>
+            <point key="canvasLocation" x="2405" y="721"/>
         </scene>
         <!--Stopwatch View-->
         <scene sceneID="DbA-kV-0GX">
             <objects>
-                <viewController id="jcV-7C-L52" customClass="StopwatchView" customModule="LRC_Stopwatch_Stable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jcV-7C-L52" customClass="StopwatchView" customModule="LRC_Stopwatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSM-cv-0EP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="819"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="767"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXR-mX-09Q">
-                                <rect key="frame" x="132" y="215" width="150" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXR-mX-09Q">
+                                <rect key="frame" x="132" y="287" width="126" height="49"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="Start/Lap">
-                                    <color key="titleColor" systemColor="linkColor"/>
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="startLapPressed:" destination="jcV-7C-L52" eventType="touchUpInside" id="GcE-R5-hHD"/>
                                     <action selector="startLapPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HO9-G7-JbV"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c4a-tB-A9T">
-                                <rect key="frame" x="28" y="362" width="358" height="457"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c4a-tB-A9T">
+                                <rect key="frame" x="0.0" y="396" width="390" height="371"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <color key="tintColor" systemColor="systemGray5Color"/>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -417,14 +642,14 @@
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="mJp-6D-CU0" style="IBUITableViewCellStyleDefault" id="XHZ-wS-aCC">
-                                        <rect key="frame" x="0.0" y="28" width="358" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XHZ-wS-aCC" id="f5o-dt-d6h">
-                                            <rect key="frame" x="0.0" y="0.0" width="358" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mJp-6D-CU0">
-                                                    <rect key="frame" x="20" y="0.0" width="318" height="43.5"/>
+                                                    <rect key="frame" x="20" y="0.0" width="350" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -441,35 +666,64 @@
                                     <outlet property="delegate" destination="jcV-7C-L52" id="19r-rp-YG8"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96B-tI-aYX">
-                                <rect key="frame" x="71" y="272" width="64" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96B-tI-aYX">
+                                <rect key="frame" x="34" y="344" width="64" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Reset">
-                                    <color key="titleColor" systemColor="linkColor"/>
+                                    <color key="titleColor" systemColor="systemRedColor"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DPx-gs-etz"/>
                                     <action selector="resetPressed:" destination="jcV-7C-L52" eventType="touchUpInside" id="ktb-GO-Lm9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpV-Sh-8dY">
-                                <rect key="frame" x="290" y="272" width="53" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpV-Sh-8dY">
+                                <rect key="frame" x="303" y="344" width="53" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Stop">
-                                    <color key="titleColor" systemColor="linkColor"/>
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="stopPressed:" destination="jcV-7C-L52" eventType="touchUpInside" id="kCx-I0-i9g"/>
                                     <action selector="stopPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzR-Se-MN9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibn-hc-A4g">
-                                <rect key="frame" x="71" y="44" width="272.66666666666669" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="67"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5PO-Ua-qap">
+                                <rect key="frame" x="16" y="221" width="187" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Swimmer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pma-N7-5iX">
+                                <rect key="frame" x="16" y="165" width="187" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMK-UL-lah">
+                                <rect key="frame" x="303" y="194" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Qe-0h-KC7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveTimePressed:" destination="jcV-7C-L52" eventType="touchUpInside" id="sPS-Hi-NhN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibn-hc-A4g">
+                                <rect key="frame" x="60" y="56" width="270" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -477,18 +731,47 @@
                         <viewLayoutGuide key="safeArea" id="ZyK-eH-TwV"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pma-N7-5iX" firstAttribute="top" secondItem="Ibn-hc-A4g" secondAttribute="bottom" constant="30" id="7o5-ze-C2G"/>
+                            <constraint firstItem="96B-tI-aYX" firstAttribute="leading" secondItem="ZyK-eH-TwV" secondAttribute="leading" constant="34" id="AQ0-zL-WIW"/>
+                            <constraint firstItem="c4a-tB-A9T" firstAttribute="top" secondItem="96B-tI-aYX" secondAttribute="bottom" constant="8" id="Cbw-MZ-oqX"/>
+                            <constraint firstItem="96B-tI-aYX" firstAttribute="baseline" secondItem="QpV-Sh-8dY" secondAttribute="baseline" id="D4l-bF-D0k"/>
+                            <constraint firstItem="pma-N7-5iX" firstAttribute="leading" secondItem="dSM-cv-0EP" secondAttribute="leadingMargin" id="GFk-vw-a1w"/>
+                            <constraint firstItem="pma-N7-5iX" firstAttribute="trailing" secondItem="5PO-Ua-qap" secondAttribute="trailing" id="GJd-Mx-Cbp"/>
+                            <constraint firstItem="xMK-UL-lah" firstAttribute="top" secondItem="Ibn-hc-A4g" secondAttribute="bottom" constant="59" id="Jom-mj-BKT"/>
+                            <constraint firstItem="Ibn-hc-A4g" firstAttribute="leading" secondItem="ZyK-eH-TwV" secondAttribute="leading" constant="60" id="M5X-7d-C2Y"/>
+                            <constraint firstItem="5PO-Ua-qap" firstAttribute="top" secondItem="pma-N7-5iX" secondAttribute="bottom" constant="22" id="MHm-fm-Vxw"/>
+                            <constraint firstItem="c4a-tB-A9T" firstAttribute="leading" secondItem="ZyK-eH-TwV" secondAttribute="leading" id="NId-cl-N62"/>
+                            <constraint firstItem="pma-N7-5iX" firstAttribute="leading" secondItem="5PO-Ua-qap" secondAttribute="leading" id="NhS-iH-OqE"/>
+                            <constraint firstItem="LXR-mX-09Q" firstAttribute="top" secondItem="5PO-Ua-qap" secondAttribute="bottom" constant="32" id="Z9u-6p-2kL"/>
+                            <constraint firstItem="xMK-UL-lah" firstAttribute="leading" secondItem="QpV-Sh-8dY" secondAttribute="leading" id="adg-BC-EI4"/>
+                            <constraint firstItem="ZyK-eH-TwV" firstAttribute="trailing" secondItem="5PO-Ua-qap" secondAttribute="trailing" constant="187" id="e6Z-zL-Qr1"/>
+                            <constraint firstItem="LXR-mX-09Q" firstAttribute="leading" secondItem="ZyK-eH-TwV" secondAttribute="leading" constant="132" id="ea5-Nw-673"/>
+                            <constraint firstItem="c4a-tB-A9T" firstAttribute="top" secondItem="LXR-mX-09Q" secondAttribute="bottom" constant="60" id="fT9-U2-Vi9"/>
+                            <constraint firstItem="QpV-Sh-8dY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="96B-tI-aYX" secondAttribute="trailing" constant="8" symbolic="YES" id="g9n-Vq-4J3"/>
+                            <constraint firstItem="Ibn-hc-A4g" firstAttribute="top" secondItem="ZyK-eH-TwV" secondAttribute="top" constant="12" id="hqh-Bg-YsR"/>
+                            <constraint firstItem="Ibn-hc-A4g" firstAttribute="centerX" secondItem="dSM-cv-0EP" secondAttribute="centerX" id="id7-N2-4oE"/>
+                            <constraint firstItem="c4a-tB-A9T" firstAttribute="bottom" secondItem="ZyK-eH-TwV" secondAttribute="bottom" id="lNg-4J-JlZ"/>
+                            <constraint firstItem="xMK-UL-lah" firstAttribute="trailing" secondItem="dSM-cv-0EP" secondAttribute="trailingMargin" id="nwr-6c-JYU"/>
+                            <constraint firstItem="Ibn-hc-A4g" firstAttribute="centerX" secondItem="LXR-mX-09Q" secondAttribute="centerX" id="qPW-2Q-9cK"/>
+                            <constraint firstItem="LXR-mX-09Q" firstAttribute="centerX" secondItem="c4a-tB-A9T" secondAttribute="centerX" id="scF-SW-jBk"/>
+                            <constraint firstItem="ZyK-eH-TwV" firstAttribute="trailing" secondItem="QpV-Sh-8dY" secondAttribute="trailing" constant="34" id="xXC-vH-Qzi"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="eventField" destination="5PO-Ua-qap" id="nYg-N2-Ohc"/>
                         <outlet property="lapTable" destination="c4a-tB-A9T" id="HxJ-L3-Eee"/>
                         <outlet property="resetButton" destination="96B-tI-aYX" id="AeV-No-cs0"/>
+                        <outlet property="saveTimeButton" destination="xMK-UL-lah" id="FCA-A4-RHj"/>
                         <outlet property="startLapButton" destination="LXR-mX-09Q" id="kWT-Iu-s8Z"/>
                         <outlet property="stopButton" destination="QpV-Sh-8dY" id="fLI-5c-mwK"/>
+                        <outlet property="swimmerField" destination="pma-N7-5iX" id="hiM-wb-ppa"/>
                         <outlet property="timeLabel" destination="Ibn-hc-A4g" id="DS1-G5-f9c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iyu-6I-JUZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.04347826086958" y="994.75446428571422"/>
+            <point key="canvasLocation" x="112.30769230769231" y="994.19431279620846"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l1H-2v-tqp">
@@ -496,7 +779,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eeD-WS-XWW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="2kw-g9-plJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" systemColor="systemGray5Color"/>
                     </navigationBar>
@@ -510,6 +793,9 @@
             <point key="canvasLocation" x="889" y="343"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="i12-QA-vm9"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemGrayColor"/>
     <resources>
         <namedColor name="AccentColor">
@@ -521,9 +807,6 @@
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -532,6 +815,9 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

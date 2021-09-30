@@ -12,7 +12,8 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        //Prints directory for simulated device, used for verifying data store
+        print("Documents Directory: ", FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).last ?? "Not Found!")
         return true
     }
 
@@ -53,7 +54,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
-
 }
 

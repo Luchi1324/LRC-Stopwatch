@@ -28,9 +28,6 @@ class BaseView: UIViewController{
            case 1:
                 self.StopwatchView.isHidden = true
                 self.SwimmerView.isHidden = false
-           case 2:
-                self.StopwatchView.isHidden = true
-                self.SwimmerView.isHidden = true
            default:
                 self.StopwatchView.isHidden = false
                 self.SwimmerView.isHidden = true
