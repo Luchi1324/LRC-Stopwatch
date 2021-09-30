@@ -7,48 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F5054D382592FBD80099CA09 /* Swimmer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5054D362592FBD70099CA09 /* Swimmer+CoreDataClass.swift */; };
-		F5054D392592FBD80099CA09 /* Swimmer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5054D372592FBD80099CA09 /* Swimmer+CoreDataProperties.swift */; };
 		F524A7C6257B8563001B9B2E /* SwimmerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F524A7C5257B8563001B9B2E /* SwimmerDetail.swift */; };
-		F524A7D2257B980D001B9B2E /* SwimmerViewTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F524A7D1257B980D001B9B2E /* SwimmerViewTableTableViewController.swift */; };
 		F524C738257741D900EA4A9A /* swimmerList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F524C736257741D900EA4A9A /* swimmerList.xcdatamodeld */; };
+		F56D0B6225E541AD009BA8F3 /* Swimmer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D0B6025E541AD009BA8F3 /* Swimmer+CoreDataClass.swift */; };
+		F56D0B6325E541AD009BA8F3 /* Swimmer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56D0B6125E541AD009BA8F3 /* Swimmer+CoreDataProperties.swift */; };
 		F5ACDDB82536AD82009AEAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ACDDB72536AD82009AEAF3 /* AppDelegate.swift */; };
 		F5ACDDBA2536AD82009AEAF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ACDDB92536AD82009AEAF3 /* SceneDelegate.swift */; };
 		F5ACDDBC2536AD82009AEAF3 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ACDDBB2536AD82009AEAF3 /* BaseView.swift */; };
 		F5ACDDBF2536AD82009AEAF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5ACDDBD2536AD82009AEAF3 /* Main.storyboard */; };
 		F5ACDDC12536AD87009AEAF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5ACDDC02536AD87009AEAF3 /* Assets.xcassets */; };
 		F5ACDDC42536AD87009AEAF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5ACDDC22536AD87009AEAF3 /* LaunchScreen.storyboard */; };
-		F5ACDDCF2536AD87009AEAF3 /* LRC_StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ACDDCE2536AD87009AEAF3 /* LRC_StopwatchTests.swift */; };
-		F5ACDDDA2536AD87009AEAF3 /* LRC_StopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ACDDD92536AD87009AEAF3 /* LRC_StopwatchUITests.swift */; };
 		F5B1EECE256B9BCF00AD0D70 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1EECD256B9BCF00AD0D70 /* StopwatchView.swift */; };
 		F5DC7940257F3AE30000C1CA /* SwimmerAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC793F257F3AE30000C1CA /* SwimmerAdd.swift */; };
 		F5EBB3C82551286B0054A007 /* SwimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBB3C72551286B0054A007 /* SwimmerView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F5ACDDCB2536AD87009AEAF3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F5ACDDAC2536AD81009AEAF3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F5ACDDB32536AD82009AEAF3;
-			remoteInfo = "LRC Stopwatch";
-		};
-		F5ACDDD62536AD87009AEAF3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F5ACDDAC2536AD81009AEAF3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F5ACDDB32536AD82009AEAF3;
-			remoteInfo = "LRC Stopwatch";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		F5054D362592FBD70099CA09 /* Swimmer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swimmer+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F5054D372592FBD80099CA09 /* Swimmer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swimmer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F524A7C5257B8563001B9B2E /* SwimmerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmerDetail.swift; sourceTree = "<group>"; };
-		F524A7D1257B980D001B9B2E /* SwimmerViewTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmerViewTableTableViewController.swift; sourceTree = "<group>"; };
 		F524C737257741D900EA4A9A /* swimmerList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swimmerList.xcdatamodel; sourceTree = "<group>"; };
-		F5ACDDB42536AD82009AEAF3 /* LRC Stopwatch Stable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LRC Stopwatch Stable.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56D0B6025E541AD009BA8F3 /* Swimmer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swimmer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F56D0B6125E541AD009BA8F3 /* Swimmer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swimmer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5ACDDB42536AD82009AEAF3 /* LRC Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LRC Stopwatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5ACDDB72536AD82009AEAF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5ACDDB92536AD82009AEAF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F5ACDDBB2536AD82009AEAF3 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -56,12 +35,6 @@
 		F5ACDDC02536AD87009AEAF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5ACDDC32536AD87009AEAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5ACDDC52536AD87009AEAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5ACDDCA2536AD87009AEAF3 /* LRC Stopwatch StableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LRC Stopwatch StableTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5ACDDCE2536AD87009AEAF3 /* LRC_StopwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRC_StopwatchTests.swift; sourceTree = "<group>"; };
-		F5ACDDD02536AD87009AEAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5ACDDD52536AD87009AEAF3 /* LRC Stopwatch StableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LRC Stopwatch StableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5ACDDD92536AD87009AEAF3 /* LRC_StopwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRC_StopwatchUITests.swift; sourceTree = "<group>"; };
-		F5ACDDDB2536AD87009AEAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B1EECD256B9BCF00AD0D70 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		F5DC793F257F3AE30000C1CA /* SwimmerAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmerAdd.swift; sourceTree = "<group>"; };
 		F5EBB3C72551286B0054A007 /* SwimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmerView.swift; sourceTree = "<group>"; };
@@ -75,28 +48,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5ACDDC72536AD87009AEAF3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F5ACDDD22536AD87009AEAF3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F55724EE258A4ADD005B149D /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				F5054D362592FBD70099CA09 /* Swimmer+CoreDataClass.swift */,
-				F5054D372592FBD80099CA09 /* Swimmer+CoreDataProperties.swift */,
+				F56D0B6025E541AD009BA8F3 /* Swimmer+CoreDataClass.swift */,
+				F56D0B6125E541AD009BA8F3 /* Swimmer+CoreDataProperties.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -106,8 +65,6 @@
 			children = (
 				F55724EE258A4ADD005B149D /* Data Model */,
 				F5ACDDB62536AD82009AEAF3 /* LRC Stopwatch */,
-				F5ACDDCD2536AD87009AEAF3 /* LRC StopwatchTests */,
-				F5ACDDD82536AD87009AEAF3 /* LRC StopwatchUITests */,
 				F5ACDDB52536AD82009AEAF3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,9 +72,7 @@
 		F5ACDDB52536AD82009AEAF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F5ACDDB42536AD82009AEAF3 /* LRC Stopwatch Stable.app */,
-				F5ACDDCA2536AD87009AEAF3 /* LRC Stopwatch StableTests.xctest */,
-				F5ACDDD52536AD87009AEAF3 /* LRC Stopwatch StableUITests.xctest */,
+				F5ACDDB42536AD82009AEAF3 /* LRC Stopwatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,37 +90,18 @@
 				F5EBB3C72551286B0054A007 /* SwimmerView.swift */,
 				F524A7C5257B8563001B9B2E /* SwimmerDetail.swift */,
 				F5ACDDBD2536AD82009AEAF3 /* Main.storyboard */,
-				F524A7D1257B980D001B9B2E /* SwimmerViewTableTableViewController.swift */,
 				F524C736257741D900EA4A9A /* swimmerList.xcdatamodeld */,
 				F5ACDDC52536AD87009AEAF3 /* Info.plist */,
 			);
 			path = "LRC Stopwatch";
 			sourceTree = "<group>";
 		};
-		F5ACDDCD2536AD87009AEAF3 /* LRC StopwatchTests */ = {
-			isa = PBXGroup;
-			children = (
-				F5ACDDCE2536AD87009AEAF3 /* LRC_StopwatchTests.swift */,
-				F5ACDDD02536AD87009AEAF3 /* Info.plist */,
-			);
-			path = "LRC StopwatchTests";
-			sourceTree = "<group>";
-		};
-		F5ACDDD82536AD87009AEAF3 /* LRC StopwatchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F5ACDDD92536AD87009AEAF3 /* LRC_StopwatchUITests.swift */,
-				F5ACDDDB2536AD87009AEAF3 /* Info.plist */,
-			);
-			path = "LRC StopwatchUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F5ACDDB32536AD82009AEAF3 /* LRC Stopwatch Stable */ = {
+		F5ACDDB32536AD82009AEAF3 /* LRC Stopwatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5ACDDDE2536AD87009AEAF3 /* Build configuration list for PBXNativeTarget "LRC Stopwatch Stable" */;
+			buildConfigurationList = F5ACDDDE2536AD87009AEAF3 /* Build configuration list for PBXNativeTarget "LRC Stopwatch" */;
 			buildPhases = (
 				F5ACDDB02536AD82009AEAF3 /* Sources */,
 				F5ACDDB12536AD82009AEAF3 /* Frameworks */,
@@ -175,46 +111,10 @@
 			);
 			dependencies = (
 			);
-			name = "LRC Stopwatch Stable";
+			name = "LRC Stopwatch";
 			productName = "LRC Stopwatch";
-			productReference = F5ACDDB42536AD82009AEAF3 /* LRC Stopwatch Stable.app */;
+			productReference = F5ACDDB42536AD82009AEAF3 /* LRC Stopwatch.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F5ACDDC92536AD87009AEAF3 /* LRC Stopwatch StableTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F5ACDDE12536AD87009AEAF3 /* Build configuration list for PBXNativeTarget "LRC Stopwatch StableTests" */;
-			buildPhases = (
-				F5ACDDC62536AD87009AEAF3 /* Sources */,
-				F5ACDDC72536AD87009AEAF3 /* Frameworks */,
-				F5ACDDC82536AD87009AEAF3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F5ACDDCC2536AD87009AEAF3 /* PBXTargetDependency */,
-			);
-			name = "LRC Stopwatch StableTests";
-			productName = "LRC StopwatchTests";
-			productReference = F5ACDDCA2536AD87009AEAF3 /* LRC Stopwatch StableTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F5ACDDD42536AD87009AEAF3 /* LRC Stopwatch StableUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F5ACDDE42536AD87009AEAF3 /* Build configuration list for PBXNativeTarget "LRC Stopwatch StableUITests" */;
-			buildPhases = (
-				F5ACDDD12536AD87009AEAF3 /* Sources */,
-				F5ACDDD22536AD87009AEAF3 /* Frameworks */,
-				F5ACDDD32536AD87009AEAF3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F5ACDDD72536AD87009AEAF3 /* PBXTargetDependency */,
-			);
-			name = "LRC Stopwatch StableUITests";
-			productName = "LRC StopwatchUITests";
-			productReference = F5ACDDD52536AD87009AEAF3 /* LRC Stopwatch StableUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -228,17 +128,9 @@
 					F5ACDDB32536AD82009AEAF3 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
-					F5ACDDC92536AD87009AEAF3 = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = F5ACDDB32536AD82009AEAF3;
-					};
-					F5ACDDD42536AD87009AEAF3 = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = F5ACDDB32536AD82009AEAF3;
-					};
 				};
 			};
-			buildConfigurationList = F5ACDDAF2536AD81009AEAF3 /* Build configuration list for PBXProject "LRC Stopwatch Stable" */;
+			buildConfigurationList = F5ACDDAF2536AD81009AEAF3 /* Build configuration list for PBXProject "LRC Stopwatch" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -251,9 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F5ACDDB32536AD82009AEAF3 /* LRC Stopwatch Stable */,
-				F5ACDDC92536AD87009AEAF3 /* LRC Stopwatch StableTests */,
-				F5ACDDD42536AD87009AEAF3 /* LRC Stopwatch StableUITests */,
+				F5ACDDB32536AD82009AEAF3 /* LRC Stopwatch */,
 			);
 		};
 /* End PBXProject section */
@@ -269,20 +159,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5ACDDC82536AD87009AEAF3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F5ACDDD32536AD87009AEAF3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -290,13 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5054D382592FBD80099CA09 /* Swimmer+CoreDataClass.swift in Sources */,
-				F5054D392592FBD80099CA09 /* Swimmer+CoreDataProperties.swift in Sources */,
 				F5ACDDBC2536AD82009AEAF3 /* BaseView.swift in Sources */,
 				F524A7C6257B8563001B9B2E /* SwimmerDetail.swift in Sources */,
+				F56D0B6225E541AD009BA8F3 /* Swimmer+CoreDataClass.swift in Sources */,
 				F5ACDDB82536AD82009AEAF3 /* AppDelegate.swift in Sources */,
+				F56D0B6325E541AD009BA8F3 /* Swimmer+CoreDataProperties.swift in Sources */,
 				F5DC7940257F3AE30000C1CA /* SwimmerAdd.swift in Sources */,
-				F524A7D2257B980D001B9B2E /* SwimmerViewTableTableViewController.swift in Sources */,
 				F5B1EECE256B9BCF00AD0D70 /* StopwatchView.swift in Sources */,
 				F5ACDDBA2536AD82009AEAF3 /* SceneDelegate.swift in Sources */,
 				F524C738257741D900EA4A9A /* swimmerList.xcdatamodeld in Sources */,
@@ -304,36 +179,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5ACDDC62536AD87009AEAF3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5ACDDCF2536AD87009AEAF3 /* LRC_StopwatchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F5ACDDD12536AD87009AEAF3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5ACDDDA2536AD87009AEAF3 /* LRC_StopwatchUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F5ACDDCC2536AD87009AEAF3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F5ACDDB32536AD82009AEAF3 /* LRC Stopwatch Stable */;
-			targetProxy = F5ACDDCB2536AD87009AEAF3 /* PBXContainerItemProxy */;
-		};
-		F5ACDDD72536AD87009AEAF3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F5ACDDB32536AD82009AEAF3 /* LRC Stopwatch Stable */;
-			targetProxy = F5ACDDD62536AD87009AEAF3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F5ACDDBD2536AD82009AEAF3 /* Main.storyboard */ = {
@@ -509,90 +355,10 @@
 			};
 			name = Release;
 		};
-		F5ACDDE22536AD87009AEAF3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "LRC StopwatchTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Luciano.LRC-StopwatchTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LRC Stopwatch Stable.app/LRC Stopwatch Stable";
-			};
-			name = Debug;
-		};
-		F5ACDDE32536AD87009AEAF3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "LRC StopwatchTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Luciano.LRC-StopwatchTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LRC Stopwatch Stable.app/LRC Stopwatch Stable";
-			};
-			name = Release;
-		};
-		F5ACDDE52536AD87009AEAF3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "LRC StopwatchUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Luciano.LRC-StopwatchUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "LRC Stopwatch";
-			};
-			name = Debug;
-		};
-		F5ACDDE62536AD87009AEAF3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "LRC StopwatchUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Luciano.LRC-StopwatchUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "LRC Stopwatch";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F5ACDDAF2536AD81009AEAF3 /* Build configuration list for PBXProject "LRC Stopwatch Stable" */ = {
+		F5ACDDAF2536AD81009AEAF3 /* Build configuration list for PBXProject "LRC Stopwatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F5ACDDDC2536AD87009AEAF3 /* Debug */,
@@ -601,29 +367,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5ACDDDE2536AD87009AEAF3 /* Build configuration list for PBXNativeTarget "LRC Stopwatch Stable" */ = {
+		F5ACDDDE2536AD87009AEAF3 /* Build configuration list for PBXNativeTarget "LRC Stopwatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F5ACDDDF2536AD87009AEAF3 /* Debug */,
 				F5ACDDE02536AD87009AEAF3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F5ACDDE12536AD87009AEAF3 /* Build configuration list for PBXNativeTarget "LRC Stopwatch StableTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F5ACDDE22536AD87009AEAF3 /* Debug */,
-				F5ACDDE32536AD87009AEAF3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F5ACDDE42536AD87009AEAF3 /* Build configuration list for PBXNativeTarget "LRC Stopwatch StableUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F5ACDDE52536AD87009AEAF3 /* Debug */,
-				F5ACDDE62536AD87009AEAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
