@@ -2,7 +2,7 @@
 //  Swimmer+CoreDataClass.swift
 //  LRC Stopwatch Stable
 //
-//  Created by Luciano Mattoli on 23/12/2020.
+//  Created by Luciano Mattoli on 23/2/2021.
 //
 //
 
